@@ -16,11 +16,11 @@ button.addEventListener('click', function () {
   if (block.style.height === '160px') {
     block.style.height = 'auto'
     button.innerHTML =
-      ' <img class="expand-icon icon-rotate" src="icon/icon.svg" alt="" /> <span class="expand-text ">Скрыть</span>'
+      ' <img class="expand-icon icon-rotate" src="img/icon/expand.png" alt="" /> <span class="expand-text ">Скрыть</span>'
   } else {
     block.style.height = '160px'
     button.innerHTML =
-      ' <img class="expand-icon" src="icon/icon.svg" alt="" /> <span class="expand-text">Показать все</span>'
+      ' <img class="expand-icon" src="img/icon/expand.png" alt="" /><span class ="expand-text">Показать все </span>'
   }
 })
 // swiper

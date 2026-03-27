@@ -13,11 +13,13 @@
     <aside class="sidebar">
       <div class="sidebar__header">
         <button class="btn-icon">
-          <img src="img/icon/burger.svg" alt="zacrut" />
+          <div class="toggle">
+            <img src="img/icon/burger.svg" alt="zacrut" />
+          </div>
         </button>
         <img src="img/icon/cps.svg" alt="CPS" class="logo" />
         <button class="btn-icon">
-          <img src="img/icon/poisk.svg" alt="poisk" />
+          <img src="img/icon/search.svg" alt="poisk" />
         </button>
       </div>
 
@@ -61,7 +63,7 @@
     </aside>
     <!-- first part -->
     <div class="main-container">
-      <header class="header">
+      <header class="main_header">
         <div class="header__left">
           <button class="btn-icon burger">
             <img src="img/icon/burger.svg" alt="" />
@@ -87,13 +89,13 @@
             <div class="action-item">
               <span class="desktop-only">Оставить заявку</span>
               <button class="btn-icon btn-pink">
-                <img src="img/icon/otvertka.svg" alt="" />
+                <img src="img/icon/repair.svg" alt="" />
               </button>
             </div>
             <div class="action-item">
               <span class="desktop-only">Статус ремонта</span>
               <button class="btn-icon btn-pink">
-                <img src="img/icon/poisk.svg" alt="" />
+                <img src="img/icon/check.svg" alt="" />
               </button>
             </div>
           </div>
@@ -146,7 +148,7 @@
     <!-- first part -->
 
     <!-- third part -->
-    <header class="header">
+    <header class="second-header">
       <h2>Ремонт техники различных брендов</h2>
     </header>
 
@@ -213,7 +215,7 @@
 
       <div class="show">
         <button class="brands__expand-btn" id="toggleBrands" type="button">
-          <img class="expand-icon" src="icon/icon.svg" alt="" />
+          <img class="expand-icon" src="img/icon/expand.png" alt="" />
           <span class="expand-text">Показать все</span>
         </button>
       </div>
@@ -249,5 +251,66 @@
       <div class="swiper-pagination"></div>
     </div>
     <!-- last part -->
+    <header class="third-header">Ремонт различных видов техники</header>
+    <section class="tecnologia">
+      <div class="swiper-slide tecno-item">
+        <div class="tecno-list"
+          >Ремонт ноутбуков
+          <button class="tecno-item__go-btn" type="button"></button>
+        </div>
+        <div class="tecno-list"
+          >Ремонт планшетов
+          <button class="tecno-item__go-btn" type="button"></button>
+        </div>
+        <div class="tecno-list"
+          >Ремонт ПК <button class="tecno-item__go-btn" type="button"></button>
+        </div>
+        <div class="tecno-list"
+          >Ремонт мониторов
+          <button class="tecno-item__go-btn" type="button"></button>
+        </div>
+      </div>
+
+      <div class="show">
+        <button class="brands__expand-btn" id="toggleBrands" type="button">
+          <img class="expand-icon" src="img/icon/expand.png" alt="" />
+          <span class="expand-text">Показать все</span>
+        </button>
+      </div>
+    </section>
+
+    <header class="chet-header">цены на услуги</header>
+<div class="swiper-slide price-item">
+  <span>Ремонтные услуги</span>   <span>Цена</span>      <span>Срок</span>
+        <div class="prise-list"
+          >Диагностика
+          <span>Бесплатно</span>
+          <span>30 мин</span>
+          <button class="order-item__order-btn" type="button"></button>
+        </div>
+        <div class="prise-list"
+          >Замена дисплея
+          <span>1 000 ₽</span>
+          <button class="order-item__order-btn" type="button"></button>
+        </div>
+        <div class="prise-list"
+          >Замена полифонического динамика 
+          <span>1 000 ₽</span><button class="order-item__order-btn" type="button"></button>
+        </div>
+        <div class="prise-list"
+          >Тестирование с выдачей технического заключения
+          <span>1 000 ₽</span>
+          <button class="order-item__order-btn" type="button"></button>
+        </div>
+        <div class="prise-list"
+          >Замена программного обеспечения
+          <span>1 000 ₽</span>
+          <button class="order-item__order-btn" type="button"></button>
+        </div>
+        <p>Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. 
+          Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
+      </div>
+
+</section>
   </body>
 </html>
