@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FINISH</title>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="sidebar__header">
+        <button class="btn-icon">
+          <img src="img/icon/burger.svg" alt="zacrut" />
+        </button>
+        <img src="img/icon/cps.svg" alt="CPS" class="logo" />
+        <button class="btn-icon">
+          <img src="img/icon/poisk.svg" alt="poisk" />
+        </button>
+      </div>
+
+      <nav class="sidebar__nav">
+        <ul>
+          <li class="active"><a href="#" class="remont">Ремонт техники</a></li>
+          <li><a href="#">Услуги и сервисы</a></li>
+          <li><a href="#">Корпоративным клиентам</a></li>
+          <li><a href="#">Продавцам техники</a></li>
+          <li><a href="#">Партнерам</a></li>
+          <li><a href="#">Производителям</a></li>
+          <li><a href="#">Наши сервисные центры</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="sidebar__footer">
+        <div class="footer__icons">
+          <button class="btn-icon">
+            <img src="img/icon/call.svg" alt="call" />
+          </button>
+          <button class="btn-icon">
+            <img src="img/icon/chat.svg" alt="chat" />
+          </button>
+          <button class="btn-icon">
+            <img src="img/icon/profile.svg" alt="profile" />
+          </button>
+        </div>
+
+        <div class="footer__contacts">
+          <p class="email">mail@cps.com</p>
+          <p class="phone">8 800 890 8900</p>
+        </div>
+
+        <div class="footer__lang">
+          <button class="lang-btn active">RU</button>
+          <button class="lang-btn">EN</button>
+          <button class="lang-btn">CH</button>
+        </div>
+      </div>
+    </aside>
+    <!-- first part -->
+    <div class="main-container">
+      <header class="header">
+        <div class="header__left">
+          <button class="btn-icon burger">
+            <img src="img/icon/burger.svg" alt="" />
+          </button>
+          <div class="divider"></div>
+          <img src="img/icon/cps.svg" alt="CPS" class="logo" />
+        </div>
+
+        <div class="header__right">
+          <div class="header__contacts">
+            <button class="btn-icon hide-mobile">
+              <img src="img/icon/call.svg" alt="" />
+            </button>
+            <button class="btn-icon hide-mobile">
+              <img src="img/icon/chat.svg" alt="" />
+            </button>
+            <button class="btn-icon hide-mobile">
+              <img src="img/icon/profile.svg" alt="" />
+            </button>
+          </div>
+          <div class="divider hide-mobile"></div>
+          <div class="header__actions">
+            <div class="action-item">
+              <span class="desktop-only">Оставить заявку</span>
+              <button class="btn-icon btn-pink">
+                <img src="img/icon/otvertka.svg" alt="" />
+              </button>
+            </div>
+            <div class="action-item">
+              <span class="desktop-only">Статус ремонта</span>
+              <button class="btn-icon btn-pink">
+                <img src="img/icon/poisk.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main-layout">
+        <section class="top-content">
+          <h1 class="page-title">Услуги и сервисы</h1>
+          <nav class="navigation">
+            <ul class="tabs-list">
+              <li class="tab active">Ремонтируемые бренды</li>
+              <li class="tab">Ремонтируемые устройства</li>
+              <li class="tab">Дополнительные услуги</li>
+              <li class="tab">Цены на услуги</li>
+              <li class="tab">Адреса сервисных центров</li>
+              <li class="tab">Специальные цены</li>
+              <li class="tab">Отзывы</li>
+            </ul>
+          </nav>
+        </section>
+
+        <section class="content-section">
+          <div class="content-text">
+            <div class="text-wrapper">
+              <p>
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.
+              </p>
+              <p class="tablet-visible">
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера,<span
+                  >что подтверждает большое количество постоянных клиентов. Мы
+                  гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                  очередь, советуют нас родным и близким.</span
+                >
+              </p>
+            </div>
+            <button class="read-more">
+              <img src="icon/expand.png" alt="" /> Читать далее
+            </button>
+          </div>
+          <div class="content-image">
+            <img src="img/MG_3223.png" alt="CPS Center" />
+          </div>
+        </section>
+      </main>
+    </div>
+    <!-- first part -->
+
+    <!-- third part -->
+    <header class="header">
+      <h2>Ремонт техники различных брендов</h2>
+    </header>
+
+    <section class="brands">
+      <div class="brands__container">
+        <div class="brands__list" id="brandsList" style="height: 160px">
+          <div class="swiper-slide brand-item">
+            <img class="brand-item__logo" src="img/lenovo.png" alt="Lenovo" />
+            <button class="brand-item__go-btn" type="button"></button>
+          </div>
+
+          <div class="brand-item">
+            <img class="brand-item__logo" src="img/sam.png" alt="Samsung" />
+            <button class="brand-item__go-btn" type="button"></button>
+          </div>
+
+          <div class="brand-item">
+            <img class="brand-item__logo" src="img/iphone.png" alt="Apple" />
+            <button class="brand-item__go-btn" type="button"></button>
+          </div>
+
+          <div class="brand-item">
+            <img class="brand-item__logo" src="img/view.png" alt="ViewSonic" />
+            <button class="brand-item__go-btn" type="button"></button>
+          </div>
+
+          <div class="brand-item">
+            <img class="brand-item__logo" src="img/bos.png" alt="Bosch" />
+            <button class="brand-item__go-btn" type="button"></button>
+          </div>
+
+          <div class="brand-item">
+            <img class="brand-item__logo" src="img/hp.png" alt="HP" />
+            <button class="brand-item__go-btn" type="button"></button>
+          </div>
+
+          <div class="brand-item">
+            <img class="brand-item__logo" src="img/aser.png" alt="Acer" />
+            <button class="brand-item__go-btn" type="button"></button>
+          </div>
+
+          <div class="brand-item">
+            <img class="brand-item__logo" src="img/sony.png" alt="Sony" />
+            <button class="brand-item__go-btn" type="button"></button>
+          </div>
+
+          <!-- READMORE -->
+
+          <div class="brand-item">
+            <img class="brand-item__logo" src="img/lenovo.png" alt="Lenovo" />
+            <button class="brand-item__go-btn" type="button"></button>
+          </div>
+          <div class="brand-item">
+            <img class="brand-item__logo" src="img/sam.png" alt="Samsung" />
+            <button class="brand-item__go-btn" type="button"></button>
+          </div>
+
+          <div class="brand-item">
+            <img class="brand-item__logo" src="img/iphone.png" alt="Apple" />
+            <button class="brand-item__go-btn" type="button"></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="show">
+        <button class="brands__expand-btn" id="toggleBrands" type="button">
+          <img class="expand-icon" src="icon/icon.svg" alt="" />
+          <span class="expand-text">Показать все</span>
+        </button>
+      </div>
+    </section>
+    <!-- swiper -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="brand-item">
+            <img class="brand-item__logo" src="img/iphone.png" alt="Apple" />
+            <button class="brand-item__go-btn" type="button"></button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brand-item">
+            <img class="brand-item__logo" src="img/sony.png" alt="Apple" />
+            <button class="brand-item__go-btn" type="button"></button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brand-item">
+            <img class="brand-item__logo" src="img/sam.png" alt="Apple" />
+            <button class="brand-item__go-btn" type="button"></button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brand-item">
+            <img class="brand-item__logo" src="img/bos.png" alt="Apple" />
+            <button class="brand-item__go-btn" type="button"></button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- last part -->
+  </body>
+</html>
