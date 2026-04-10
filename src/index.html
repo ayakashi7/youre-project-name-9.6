@@ -7,18 +7,23 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
     <title>FINISH</title>
   </head>
   <body>
+
     <aside class="sidebar">
       <div class="sidebar__header">
-        <button class="btn-icon">
-          <div class="toggle">
+        <!-- <button class="btn-icon">
+       
             <img src="img/icon/burger.svg" alt="zacrut" />
-          </div>
-        </button>
+        
+        </button> -->
         <img src="img/icon/cps.svg" alt="CPS" class="logo" />
-        <button class="btn-icon">
+        <button class="btn-icons">
           <img src="img/icon/search.svg" alt="poisk" />
         </button>
       </div>
@@ -38,13 +43,13 @@
 
       <div class="sidebar__footer">
         <div class="footer__icons">
-          <button class="btn-icon">
+          <button class="btn-icons">
             <img src="img/icon/call.svg" alt="call" />
           </button>
-          <button class="btn-icon">
+          <button class="btn-icons">
             <img src="img/icon/chat.svg" alt="chat" />
           </button>
-          <button class="btn-icon">
+          <button class="btn-icons">
             <img src="img/icon/profile.svg" alt="profile" />
           </button>
         </div>
@@ -62,25 +67,27 @@
       </div>
     </aside>
     <!-- first part -->
-    <div class="main-container">
+   <div class="first-container">
       <header class="main_header">
         <div class="header__left">
-          <button class="btn-icon burger">
-            <img src="img/icon/burger.svg" alt="" />
+          <div class="toggle">
+          <button class="btn-icons btn_burger">
+            <img class="bar"  src="img/icon/burger.svg" alt="" />
           </button>
+          </div>
           <div class="divider"></div>
-          <img src="img/icon/cps.svg" alt="CPS" class="logo" />
+          <img src="img/icon/cps.svg" alt="CPS" class="logo1" />
         </div>
 
         <div class="header__right">
           <div class="header__contacts">
-            <button class="btn-icon hide-mobile">
+            <button class="btn-icons hide-mobile">
               <img src="img/icon/call.svg" alt="" />
             </button>
-            <button class="btn-icon hide-mobile">
+            <button class="btn-icons hide-mobile">
               <img src="img/icon/chat.svg" alt="" />
             </button>
-            <button class="btn-icon hide-mobile">
+            <button class="btn-icons hide-mobile">
               <img src="img/icon/profile.svg" alt="" />
             </button>
           </div>
@@ -88,13 +95,13 @@
           <div class="header__actions">
             <div class="action-item">
               <span class="desktop-only">Оставить заявку</span>
-              <button class="btn-icon btn-pink">
+              <button class="btn-icons btn-pink">
                 <img src="img/icon/repair.svg" alt="" />
               </button>
             </div>
             <div class="action-item">
               <span class="desktop-only">Статус ремонта</span>
-              <button class="btn-icon btn-pink">
+              <button class="btn-icons btn-pink">
                 <img src="img/icon/check.svg" alt="" />
               </button>
             </div>
@@ -143,8 +150,8 @@
             <img src="img/MG_3223.png" alt="CPS Center" />
           </div>
         </section>
-      </main>
-    </div>
+     </div>
+  
     <!-- first part -->
 
     <!-- third part -->
@@ -221,7 +228,7 @@
       </div>
     </section>
     <!-- swiper -->
-    <div class="swiper">
+    <div class="swiper swiper1">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="brand-item">
@@ -251,10 +258,25 @@
       <div class="swiper-pagination"></div>
     </div>
     <!-- last part -->
-    <header class="third-header">Ремонт различных видов техники</header>
+    <div class="third-header"><h4>Ремонт различных видов техники</h4></div>
     <section class="tecnologia">
-      <div class="swiper-slide tecno-item">
+      <div class="tecno-item" id="brandList" style="height: 160px" >
         <div class="tecno-list"
+          >Ремонт ноутбуков
+          <button class="tecno-item__go-btn" type="button"></button>
+        </div>
+        <div class="tecno-list"
+          >Ремонт планшетов
+          <button class="tecno-item__go-btn" type="button"></button>
+        </div>
+        <div class="tecno-list"
+          >Ремонт ПК <button class="tecno-item__go-btn" type="button"></button>
+        </div>
+        <div class="tecno-list"
+          >Ремонт мониторов
+          <button class="tecno-item__go-btn" type="button"></button>
+        </div>
+         <div class="tecno-list"
           >Ремонт ноутбуков
           <button class="tecno-item__go-btn" type="button"></button>
         </div>
@@ -272,45 +294,108 @@
       </div>
 
       <div class="show">
-        <button class="brands__expand-btn" id="toggleBrands" type="button">
+        <button class="brands__expand-btn" id="toggleBran" type="button">
           <img class="expand-icon" src="img/icon/expand.png" alt="" />
           <span class="expand-text">Показать все</span>
         </button>
       </div>
     </section>
+    <!-- swiper -->
+ <div class="swiper swiper2">
+      <div class="swiper-wrapper wrapper2">
 
-    <header class="chet-header">цены на услуги</header>
-<div class="swiper-slide price-item">
-  <span>Ремонтные услуги</span>   <span>Цена</span>      <span>Срок</span>
-        <div class="prise-list"
-          >Диагностика
-          <span>Бесплатно</span>
-          <span>30 мин</span>
-          <button class="order-item__order-btn" type="button"></button>
+        <div class="swiper-slide slide2">
+          <div class="tecno-item" >
+        <div class="tecno-list"
+          >Ремонт ноутбуков
+          <button class="tecno-item__go-btn" type="button"></button>
         </div>
-        <div class="prise-list"
-          >Замена дисплея
-          <span>1 000 ₽</span>
-          <button class="order-item__order-btn" type="button"></button>
+          </div>
+        <div class="tecno-item" >
+        <div class="tecno-list"
+          >Ремонт планшетов
+          <button class="tecno-item__go-btn" type="button"></button>
         </div>
-        <div class="prise-list"
-          >Замена полифонического динамика 
-          <span>1 000 ₽</span><button class="order-item__order-btn" type="button"></button>
         </div>
-        <div class="prise-list"
-          >Тестирование с выдачей технического заключения
-          <span>1 000 ₽</span>
-          <button class="order-item__order-btn" type="button"></button>
+         <div class="tecno-item" >
+        <div class="tecno-list"
+          >Ремонт ПК <button class="tecno-item__go-btn" type="button"></button>
         </div>
-        <div class="prise-list"
-          >Замена программного обеспечения
-          <span>1 000 ₽</span>
-          <button class="order-item__order-btn" type="button"></button>
-        </div>
-        <p>Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. 
-          Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
       </div>
+         <!-- <div class="tecno-item" >
+        <div class="tecno-list"
+          >Ремонт мониторов
+          <button class="tecno-item__go-btn" type="button"></button>
+        </div> -->
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
 
+ </div>
+ <!-- price -->
+    <div class="fourth-header">
+      <h4>цены на услуги</h4></div>
+<div class="price-item">
+<table class="price-list" >
+  <tr class="capital-tr">
+  <th>Ремонтные услуги</th>
+  <th>Цена</th>
+  <th>Срок</th>
+  </tr>
+  <tr>
+    <td>Диагностика</td>
+    <td>Бесплатно</td>
+    <td>30 мин</td>
+    <td><button class="order-item__order-btn" type="button"></button>
+</td>
+  </tr>
+  <tr>
+    <td>Замена дисплея</td>
+    <td>1 000 ₽</td>
+    <td>30-120 мин</td>
+    <td><button class="order-item__order-btn" type="button"></button></td>
+  </tr>
+  <tr>
+    <td>Замена полифонического динамика</td>
+    <td>1 000 ₽</td>
+    <td>30-120 мин</td>
+    <td><button class="order-item__order-btn" type="button"></button></td>
+  </tr>
+  <tr>
+    <td>Тестирование с выдачей технического заключения</td>
+    <td>1 000 ₽</td>
+    <td>30-120 мин</td>
+    <td><button class="order-item__order-btn" type="button"></button></td>
+  </tr>
+  <tr>
+    <td>Замена программного обеспечения</td>
+    <td>1 000 ₽</td>
+    <td>30-120 мин</td>
+   <td> <button class="order-item__order-btn" type="button"></button></td>
+  </tr>
+</table>
+        <div class="price-content">
+  <p>
+    Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу.
+    Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
+  </p>
+</div>
+
+<div class="business">
+  <h3>Получить коммерческое предложение</h3>
+</div>
 </section>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      © 2019 CPS <br>
+Разработано командой Apesong 
+<div class="footer-center">Политика конфиденциальности</div>
+<div class="footer-right">Информация, размещенная на данной странице, не является публичной офертой</div>
+    </div>
+  </div>
+</footer>
+ </main>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   </body>
 </html>
