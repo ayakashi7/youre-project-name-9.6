@@ -64,3 +64,11 @@ var swiper2 = new Swiper('.swiper2', {
     clickable: true
   }
 })
+var swiper3 = new Swiper('.swiper3', {
+  slidesPerView: 'auto',
+  spaceBetween: 16,
+  pagination: {
+    el: '.swiper3 .swiper-pagination',
+    clickable: true
+  }
+})
