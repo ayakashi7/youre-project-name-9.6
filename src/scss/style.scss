@@ -257,6 +257,10 @@ body {
     .page-title {
       font-size: 22px;
     }
+
+    .header__contacts {
+      display: none;
+    }
   }
 
   .tabs-list::-webkit-scrollbar {
@@ -480,7 +484,6 @@ h2 {
 }
 .brands__container {
   max-width: 1120px;
-  margin: 0 auto;
   padding: 0 24px;
 }
 /* CONTENT */
@@ -539,7 +542,7 @@ h2 {
   }
 
   .second-header {
-    padding: 10px calc((100% - 1120px) / 2);
+    padding: 0 20px;
   }
 
   .swiper1 {
@@ -660,7 +663,7 @@ h2 {
     gap: 16px 55px;
   }
   .third-header {
-    padding: 10px calc((100% - 1120px) / 2);
+    padding: 0 20px;
   }
   .swiper2 {
     display: none;
