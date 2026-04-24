@@ -167,6 +167,7 @@ body {
     font-weight: 500;
   }
 }
+// dekstop
 @media (min-width: 1119px) {
   .tablet-icons {
     display: none;
@@ -228,7 +229,7 @@ body {
     display: flex;
   }
 
-  /* --- telefon(320px-768px) --- */
+  // android
   @media (max-width: 768px) {
     .hide-mobile,
     .header__right .tablet-icons,
@@ -269,7 +270,6 @@ body {
 .sidebar {
   width: 320px;
   height: 100vh;
-
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -281,12 +281,12 @@ body {
 
   font-family: 'TText';
   font-weight: 500;
-  z-index: 1;
+  z-index: 100;
   position: fixed;
   overflow-y: auto;
 }
 
-/* golova */
+/* header */
 .sidebar__header {
   display: flex;
   align-items: center;
@@ -299,7 +299,7 @@ body {
   padding-right: 70px;
 }
 
-/* knopki */
+/* btn */
 .btn-icons {
   width: 40px;
   height: 40px;
@@ -430,6 +430,7 @@ body {
     transform: translateY(0) scale(0.9);
   }
 }
+// ipad
 @media (min-width: 1120px) {
   .sidebar {
     box-shadow: none;
@@ -439,11 +440,13 @@ body {
     box-shadow: none;
   }
 }
+// android
 @media (max-width: 768px) {
   .sidebar {
     display: none;
   }
 }
+// dekstop
 @media (max-width: 1120px) {
   .sidebar {
     display: none;
@@ -456,22 +459,22 @@ body {
 .brands {
   background: #f8f8f8;
   padding: 40px 0;
-  margin-left: 335px;
 }
 /* header */
 .second-header {
   background: linear-gradient(90deg, #f8f8f8 0%, white 98.61%);
-  padding: 3px 200px;
   font-size: small;
+  text-transform: uppercase;
   color: #7e7e82;
   border-top: 1px solid #5fdee7;
-  text-transform: uppercase;
   font-family: 'TText';
-  margin-left: 150px;
   margin-top: 50px;
   font-weight: 300;
 }
-
+h2 {
+  font-family: 'TText';
+  font-weight: 400;
+}
 .brands__container {
   max-width: 1120px;
   margin: 0 auto;
@@ -524,6 +527,7 @@ body {
 .icon-rotate {
   transform: rotate(180deg);
 }
+// dekstop
 @media (min-width: 1120px) {
   .brands__list {
     grid-template-columns: repeat(4, 224px);
@@ -539,7 +543,7 @@ body {
     display: none;
   }
 }
-
+// ipad
 @media (min-width: 768px) and (max-width: 1119px) {
   .brands__list {
     grid-template-columns: repeat(3, 224px);
@@ -552,14 +556,13 @@ body {
   }
   .second-header {
     padding: 10px 30px;
-    margin: 0 auto;
   }
 
   .swiper1 {
     display: none;
   }
 }
-
+// android
 @media (max-width: 767px) {
   .brands {
     display: none;
@@ -580,7 +583,6 @@ body {
   }
   .second-header {
     padding: 10px 24px;
-    margin: 0;
   }
   .swiper1 {
     display: flex;
@@ -604,25 +606,27 @@ body {
 .tecnologia {
   background: #f8f8f8;
   padding: 30px 0 30px 30px;
-  margin-left: 335px;
 }
 .third-header {
   background: linear-gradient(90deg, #f8f8f8 0%, white 98.61%);
-  padding: 3px 200px;
   color: #7e7e82;
   border-top: 1px solid #5fdee7;
   text-transform: uppercase;
-  font-family: 'TText';
-  margin-left: 150px;
   height: 56px;
-  font-weight: 300;
+  margin-top: 10px;
+  h3 {
+    font-family: 'TText';
+    font-weight: 400;
+  }
 }
+
 .tecno-item {
   display: grid;
   height: 160px;
   gap: 15px 65px;
   overflow: hidden;
 }
+
 .tecno-list {
   width: 240px;
   height: 160px;
@@ -645,6 +649,7 @@ body {
   flex-shrink: 0;
   margin-top: 175px;
 }
+// dekstop
 @media (min-width: 1120px) {
   .tecno-item {
     grid-template-columns: repeat(4, 224px);
@@ -658,6 +663,7 @@ body {
     display: none;
   }
 }
+// ipad
 @media (min-width: 768px) and (max-width: 1119px) {
   .tecno-item {
     grid-template-columns: repeat(3, 240px);
@@ -676,11 +682,10 @@ body {
     display: none;
   }
 }
-
+// android
 @media (max-width: 767px) {
   .third-header {
     padding: 10px 24px;
-    margin: 0;
   }
   .swiper2 {
     display: flex;
@@ -703,21 +708,21 @@ body {
 }
 .fourth-header {
   background: linear-gradient(90deg, #f8f8f8 0%, white 98.61%);
-  padding: 3px 200px;
   color: #7e7e82;
   border-top: 1px solid #5fdee7;
   text-transform: uppercase;
-  font-family: 'TText';
   font-size: 16px;
-  margin-left: 150px;
   height: 56px;
-  font-weight: 300;
+  margin-top: 30px;
+  h3 {
+    font-family: 'TText';
+    font-weight: 400;
+    padding: 0px 0px 0px 20px;
+  }
 }
 .price-list {
   width: 100%;
   padding: 10px 30px;
-  margin: 0;
-
   border-collapse: separate;
   border-spacing: 0 2px;
 
@@ -747,18 +752,66 @@ body {
     text-align: right;
   }
 }
+// table slider
+.price-slide {
+  display: grid;
+  height: 230px;
+  gap: 15px 65px;
+  overflow: hidden;
+  padding: 10px;
+  margin: 0;
+}
+.slide3 {
+  /* Убедитесь, что ширина слайда не фиксированная, 
+     если вы хотите, чтобы они стояли плотнее */
+  width: auto !important;
+}
+.price-listo {
+  width: 260px;
+  height: 200px;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.price-card_logo {
+  display: block;
+  font-size: 14px;
+  color: #7e7e82;
+  margin-bottom: 4px;
+}
+.price-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #1b1c21;
+}
+.price-card_row {
+  flex-wrap: wrap;
+  align-items: flex-end;
+  position: relative;
+  padding: 0 0px 10px 0px;
+}
+
 .order-item__order-btn {
   width: 119px;
   height: 40px;
   border: 2px #ff3e79;
-  background: white url(../img/icon/order.svg) no-repeat center;
+  background: url(../img/icon/order.svg) no-repeat center;
   cursor: pointer;
   flex-shrink: 0;
-  margin-top: 0;
+  margin-left: 106px;
+  margin-top: -35px;
+  align-items: center;
+  transition: opacity 0.2s;
 }
+
 .price-content {
   max-width: 420px;
-  padding: 0 340px;
   font-family: 'TText';
   font-weight: 300;
   font-size: 14px;
@@ -768,9 +821,8 @@ body {
 
 .business {
   max-width: 420px;
-  padding: 0 340px;
-
   h3 {
+    font-family: 'TText';
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
@@ -795,25 +847,27 @@ body {
   align-items: flex-start;
   font-size: 14px;
   color: #7e7e7e;
-  margin: 0 330px;
+  font-family: 'TText';
 }
 
 .footer-center {
   text-align: center;
-  margin: -42px 28px -68px 236px;
 }
 
 .footer-right {
   text-align: right;
-  margin: 46px -282px -193px 630px;
 }
+// dekstop
 @media (min-width: 1120px) {
   .price-list {
-    margin: 0 0 0 300px;
     width: 1200px;
-    padding: 0 10px 0 35px;
+    padding: 0 10px 0 10px;
+  }
+  .price-slide {
+    display: none;
   }
 }
+// ipad
 @media (min-width: 768px) and (max-width: 1119px) {
   .price-content,
   .business {
@@ -821,13 +875,70 @@ body {
   }
   .fourth-header {
     padding: 10px 30px;
-    margin: 0 auto;
   }
   .footer {
     padding: 40px 0px 60px 0px;
   }
   .footer-container {
     padding: 0 25px;
-    margin: 0;
   }
+  .price-slide {
+    display: none;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .sidebar {
+    transform: translateX(0);
+    box-shadow: none;
+  }
+  .sidebar.active {
+    display: flex;
+  }
+}
+// android
+@media (max-width: 767px) {
+  .price-list {
+    display: none;
+  }
+  .fourth-header {
+    padding: 10px 15px;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer {
+    padding: 32px 16px;
+  }
+  .sidebar {
+    transform: translateX(0);
+    box-shadow: none;
+  }
+  .sidebar.active {
+    display: flex;
+  }
+}
+.overlay {
+  width: 100vw;
+  height: 1000vw;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: #ecbfd38b;
+  z-index: 99;
+  display: none;
+}
+.sidebar.active ~ .overlay {
+  display: flex;
 }

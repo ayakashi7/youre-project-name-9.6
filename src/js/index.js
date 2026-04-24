@@ -31,22 +31,31 @@ button2.addEventListener('click', function () {
 
 // navbar
 const btn = document.querySelector('.btn_burger')
+const closeBtn = document.querySelector('.close-btn')
 const sidebar = document.querySelector('.sidebar')
 const icon = document.querySelector('.bar')
 
 btn.addEventListener('click', () => {
-  sidebar.classList.toggle('active')
+  sidebar.classList.add('active')
 
-  if (sidebar.classList.contains('active')) {
-    icon.src = 'img/icon/back.svg'
-  } else {
-    icon.src = 'img/icon/burger.svg'
+  // if (sidebar.classList.contains('active')) {
+  //   icon.src = 'img/icon/back.svg'
+  // } else {
+  //   icon.src = 'img/icon/burger.svg'
+  // }
+})
+closeBtn.addEventListener('click', () => {
+  sidebar.classList.remove('active')
+})
+document.addEventListener('click', (e) => {
+  if (
+    !sidebar.contains(e.target) &&
+    !btn.contains(e.target) &&
+    sidebar.classList.contains('active')
+  ) {
+    sidebar.classList.remove('active')
   }
 })
-// const sidebar = document.querySelector('.sidebar')
-// btn.addEventListener('click',function (){
-//   if(sidebar.style.margin === '335px')
-// })
 // swiper first
 var swiper1 = new Swiper('.swiper1', {
   slidesPerView: 'auto',
