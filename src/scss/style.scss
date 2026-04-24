@@ -181,6 +181,9 @@ body {
   .main-header {
     background: none;
   }
+  .sidebar__header .close-btn {
+    display: none;
+  }
 }
 /* ipad */
 @media (max-width: 1120px) {
